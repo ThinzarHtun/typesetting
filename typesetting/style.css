@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR styling/typesetting CSS code BELOW HERE */
+
+  html {
+    font-size: 10px; /* Base font-size: 10px (~0.625rem) */
+  }
+  
+  body {
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+  }
+  
+  h2, h3, h4, h5, h6 {
+    text-align: left;
+    letter-spacing: 2px;
+    color: black;
+  }
+  
+  h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.6rem;
+  }
+  
+  section p:first-of-type {
+    text-indent: 1.25rem;
+  }
+  
+  /* Links */
+  a {
+    color: #a66;
+    text-decoration: underline;
+    outline: none;
+  }
+  
+  a:visited {
+    color: #855;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #c77;
+  }
+  
+  a:active {
+    color: #f00;
+    font-weight: bold;
+  }
+  
+  a[href^="http"]::after {
+    background-image: url('./external-link-52.png');
+    font-size: 0.8em;
+  }
+  
+  /* Lists */
+  ul, ol {
+    margin: 1.6rem 0;
+    padding-left: 2rem;
+  }
+  
+  li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  
+  ul li {
+    list-style-type: square;
+  }
+  
+ /* Navigation menu */
+ main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+ nav {
+  width: 20vw;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  width: 100%;
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+nav ul li a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  color: #a66;
+  text-decoration: none;
+  border: 2px solid #855;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #855;
+  color: white;
+}
